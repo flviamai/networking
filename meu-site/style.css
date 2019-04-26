@@ -1,0 +1,68 @@
+body{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'nav nav nav nav'
+                         'section section aside aside '
+                         'footer footer footer footer';
+    grid-auto-rows: 25vh 35vh 60vh 70vh;
+    margin: 0;
+   
+}
+header{
+    grid-area: header;
+    background-color: rgb(86, 137, 233);
+    color: blue;
+    
+}
+
+h1{
+    color: blue;
+    font-size: 34pt;
+    font-family: Impact;
+    text-decoration: none;
+    margin: 100px 100px;
+    padding: 100px solid red;
+    border: 100px 100px;     
+}
+
+img{
+    height: 400px;
+    width: 500px;
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+
+
+}
+aside{
+    grid-area: aside;
+    background-color: red;
+}
+section{
+    grid-area: section;
+    background-color: purple;
+}    
+
+#texto{
+    color: blue; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+       
+ }
+
+footer{
+    grid-area: footer;
+    background-image: url("image/download.jpg");
+    background-size: cover;
+}
